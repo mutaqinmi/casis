@@ -89,7 +89,7 @@ html {
 }
 
 .formfield {
-    width: 60%;
+    width: 100%;
     padding: 0.5rem;
     box-sizing: border-box;
     border: none;
