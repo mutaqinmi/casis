@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="You're Invited!">
+        <title>CASIS | OSIS SMKN 2 TASIKMALAYA</title>
+        <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+        <link rel="icon" href="logo.png">
+        <script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="head">
+            <span class="labeltag">You're Invited to</span>
+            <img src="logo.png" alt="LOGO OSIS" />
+            <h1 class="labeltag">CASIS OSIS</h1>
+            <span class="labeltag" id="label">SMK NEGERI 2 TASIKMALAYA</span>
+            <div class="form">
+                <form method="POST">
+                    <input type="text" name="nama" id="nama" class="formfield" placeholder="Nama" required />
+                    <div class="kelas">
+                        <select name="x" id="x" class="formfield" readonly>
+                            <option value="X">X</option>
+                        </select>
+                        <input type="text" name="kelas" id="kelas" class="formfield" placeholder="Kelas" required/>
+                    </div>
+                    <textarea name="motivasi" id="motivasi" class="formfield" placeholder="Motivasi masuk CASIS OSIS" required/></textarea>
+                    <div class="button">
+                        <button type="reset" id="toabout">Masih Ragu?</button>
+                        <button type="submit" class="btn confirm">Daftar Sekarang!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <script src="script.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>

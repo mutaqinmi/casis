@@ -1,0 +1,140 @@
+@font-face {
+    font-family: Montserrat;
+    src: url('static/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Montserrat Thin;
+    src: url('static/Montserrat-Thin.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.hidden {
+    display: none;
+}
+
+.head {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.head > img {
+    width: 10rem;
+    margin: 3rem;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        filter: drop-shadow(0px 0px 2px #fff);
+    }
+    
+    to {
+        filter: drop-shadow(0px 0px 10px #fff);
+    }
+}
+
+.head > img:hover {
+    filter: drop-shadow(0px 0px 20px #fff);
+}
+
+.head > span {
+    font-family: Montserrat Thin;
+    color: #eaeaea;
+}
+
+.head > h1 {
+    font-family: Montserrat;
+    color: #eaeaea;
+    letter-spacing: 10px;
+}
+
+.head > #label {
+    font-family: Montserrat Thin;
+    color: #eaeaea;
+    letter-spacing: 2px;
+}
+
+.form {
+    background-color: #000;
+    margin-top: 5rem;
+    width: 60%;
+}
+
+.form > form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form > form > .kelas {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5rem;
+}
+
+.formfield {
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    margin-bottom: 0.5rem;
+    border-radius: 2rem;
+    background-color: #2b2b2b;
+    color: #fff;
+}
+
+#motivasi {
+    border-radius: 1rem;
+}
+
+.button {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 3rem;
+}
+
+.btn {
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #000;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+#toabout {
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #000;
+    border: none;
+    box-sizing: border-box;
+    color: #2b2b2b;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 10px #fff;
+}
