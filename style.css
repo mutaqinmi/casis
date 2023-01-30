@@ -78,15 +78,12 @@ html {
     background-color: #000;
     margin-top: 5rem;
     width: 60%;
-}
-
-.form > form {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.form > form > .kelas {
+.form > .kelas {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 0.5rem;
